@@ -15,11 +15,11 @@ services:
       labels:
         - "traefik.enable=true"
         - "traefik.http.routers.franco.entrypoints=http"
-        - "traefik.http.routers.franco.rule=Host(`franco.francorm.com`)"
+        - "traefik.http.routers.franco.rule=Host(`franco.byronrm.com`)"
         - "traefik.http.middlewares.franco-https-redirect.redirectscheme.scheme=https"
         - "traefik.http.routers.franco.middlewares=franco-https-redirect"
         - "traefik.http.routers.franco-secure.entrypoints=https"
-        - "traefik.http.routers.franco-secure.rule=Host(`franco.francorm.com`)"
+        - "traefik.http.routers.franco-secure.rule=Host(`franco.byronrm.com`)"
         - "traefik.http.routers.franco-secure.tls=true"
         - "traefik.http.routers.franco-secure.tls.certresolver=http"
         - "traefik.http.routers.franco-secure.service=franco"
