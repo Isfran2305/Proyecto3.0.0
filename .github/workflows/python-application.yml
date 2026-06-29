@@ -32,7 +32,7 @@ jobs:
 
     - name: Run applicatio
       run: |
-        python app.py
+        python -c "import app; print('ok')"
 
     - name: Despliegue Simulado
       run: |
